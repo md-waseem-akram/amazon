@@ -1,16 +1,26 @@
 import React from 'react';
 
 class Cartitem extends React.Component {
+  constructor(){
+    super();
+    this.state={
+      price : 999,
+      Qty : 1,
+      title: 'Mobile Phone',
+      img :''
+    }
+  }
   render () {
+    const {price, Qty, title} = this.state;
     return (
       <div className="cart-item">
         <div className="left-block">
           <img style={styles.image} alt=""/>
         </div>
         <div className="right-block">
-          <div style={ { fontSize: 25 } }>Phone</div>
-          <div style={ { color: '#777' } }>Rs 999</div>
-          <div style={ { color: '#777' } }>Qty: 1</div>
+          <div style={ { fontSize: 25 } }>{title}</div>
+          <div style={ { color: '#777' } }>Rs {price}</div>
+          <div style={ { color: '#777' } }>Qty: {Qty}</div>
           <div className="cart-item-actions">
             {/* Buttons */}
             <img alt="increase" className="action-icons" src="https://cdn-icons-png.flaticon.com/512/992/992651.png" />
