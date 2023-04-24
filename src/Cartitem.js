@@ -13,6 +13,9 @@ class Cartitem extends React.Component {
           <div style={ { color: '#777' } }>Qty: 1</div>
           <div className="cart-item-actions">
             {/* Buttons */}
+            <img alt="increase" className="action-icons" src="https://cdn-icons-png.flaticon.com/512/992/992651.png" />
+            <img alt="decrease" className='action-icons' src="https://png.pngtree.com/png-vector/20190420/ourmid/pngtree-minus-vector-icon-png-image_963967.jpg"/>
+            <img alt="delete" className='action-icons' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw4UfwSwsJhC_6oWiAKwZup8Lb1E2sv2LpK6ecHNcI6A&usqp=CAU&ec=48665699"/>
           </div>
         </div>
       </div>
